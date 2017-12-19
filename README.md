@@ -307,6 +307,22 @@ Per convention, the `www` folder of your hosting account is your webroot and is 
 
 In our case, the `img`, the `js`, and the `css` folders were defined as shared folders and symlinked.     
 
+A more realistic situation would be to provide an `uploads` folder that is shared. This folder is used for *user uploads*, whereas the `css`, `js`, and `img` folder would be part of the deployment. This would result in the following directory layout:
+
+
+    domainbe@ssh:~# ls -l ~/checkout/master/shared/www
+    drwxr-xr-x ... uploads
+    
+The web root will then contain a symlink to the shared folder:     
+
+    domainbe@ssh:~# ls -l ~/www
+    drwxr-xr-x ... css
+    drwxr-xr-x ... img
+    -rw-r--r-- ... index.php
+    drwxr-xr-x ... js
+    lrwxrwxrwx ... uploads -> /data/sites/web/domainbe/checkout/master/shared/www/uploads
+
+
 ## Branching
 
 It is possible to create subsites based on the branch name in your git repository.
@@ -325,7 +341,7 @@ The `checkout` folder will contain a subfolder for your new branch. In our case 
     drwxr-xr-x ... master
     drwxr-xr-x ... staging
 
-Now the new http://staging.domain.be website will be available!
+Now the new *http://staging.domain.be* website will be available!
 
 This is also reflected in the directory structure of your subsites as you can see below:
 
