@@ -307,7 +307,7 @@ Per convention, the `www` folder of your hosting account is your webroot and is 
 
 In our case, the `img`, the `js`, and the `css` folders were defined as shared folders and symlinked.     
 
-A more realistic situation would be to provide an `uploads` folder that is shared. This folder is used for *user uploads*, whereas the `css`, `js`, and `img` folder would be part of the deployment. This would result in the following directory layout:
+A more realistic situation would be to provide an `uploads` folder that is shared. This folder is used for *user uploads*, whereas the `css`, `js`, and `img` folders would be part of the deployment. This would result in the following directory layout:
 
 
     domainbe@ssh:~# ls -l ~/checkout/master/shared/www
