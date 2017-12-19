@@ -8,7 +8,11 @@ This repository shows how you can use Combell Autogit to deploy a project.
   * [Existing folder](#existing-folder)
   * [Existing Git project](#existing-git-project)
 * [Deployment](#deployment)
+  * [Directory structure](#directory-structure)
+  * [Deployment process](#deployment-process)
 * [`.autogit.yml`](#autogityml)
+  * [Composer install example](#composer-install-example)
+  * [How to manage shared resources](#how-to-manage-shared-resources)
 * [Branching](#branching)
 
 ## Introduction
@@ -251,7 +255,7 @@ hooks:
     exit 0
 ```
 
-### How to manage images, JS, CSS, and other shared resources
+### How to manage shared resources
 
 The goal of our Autogit implementation is to provide an easy way to deploy your code. In reality your project contains more than just the code:
 
