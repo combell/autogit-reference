@@ -28,7 +28,7 @@ Since your Git repository now contains new versions of your project after commit
 With the Autogit feature of Combell, deploying is as simple as [pushing your commits](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
  to a repository hosted on the [Combell servers](https://www.combell.com/en/hosting/web-hosting). 
  
- The workflow resembles *git pushes* your perform to hosted repositories like *GitHub, GitLab, or Bitbucket*. The main difference is that **the Combell git remote's sole purpose is to perform a deployment of the code that resides within the repository**.
+ The workflow resembles *git pushes* you perform to hosted repositories like *GitHub, GitLab, or Bitbucket*. The main difference is that **the Combell git remote's sole purpose is to perform a deployment of the code that resides within the repository**.
  
  Additional *pre-deployment and post-deployment actions* are defined in the `.autogit.yml` configuration file and can be used to customize the deployment process. 
 
@@ -115,7 +115,7 @@ When you have an existing Git project **on your local computer** (with or withou
     git remote add combell domainbe@ssh.domain.be:auto.git
     git push -u combell master
     
-Instead of pushing commits to common remotes like *GitHub, GitLab, or Bitbucket*, you'll push them to our remote.    
+Besides pushing commits to common remotes like *GitHub, GitLab, or Bitbucket*, you'll push them to our remote.    
 
 ## Deployment
 
@@ -126,7 +126,7 @@ for deployments. For every branch, a folder is created within the `checkout` fol
 
 ### Directory structure
 
-When we push the default master branch to the Combell remote, a branch folder is created in the `checkout` directory.
+When we push a branch to the Combell remote, a branch folder is created in the `checkout` directory.
 
     domainbe@ssh:~# ls -l
     total 36
