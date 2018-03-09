@@ -295,7 +295,7 @@ Please upload the content for these folders to the *shared folder*
     drwxr-xr-x ... img
     drwxr-xr-x ... js
     
-After the Autogit deployment, these folders will be symlink to the appropriate target location as illustrated below:
+After the Autogit deployment, these folders will be symlinked to the appropriate target location as illustrated below:
 
     domainbe@ssh:~# ls -l ~/www
     lrwxrwxrwx ... css -> /data/sites/web/domainbe/checkout/master/shared/www/css
