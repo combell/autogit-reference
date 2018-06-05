@@ -113,7 +113,7 @@ When you have an existing Git project **on your local computer** (with or withou
 
     cd existing_repo
     git remote add combell domainbe@ssh.domain.be:auto.git
-    git push -u combell master
+    git push combell master
     
 Besides pushing commits to common remotes like *GitHub, GitLab, or Bitbucket*, you'll push them to our remote.    
 
